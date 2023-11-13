@@ -1,0 +1,3 @@
+darknet.exe detector train data/obj.data cfg/yolov4-obj-ech.cfg yolov4.conv.137 #訓練指令
+
+darknet.exe detector test(demo) data/obj.data cfg/yolov4-obj-ech.cfg backup/yolov4-obj-ech_last.weights 330.jpg -thresh 0.6 #訓練後檢測模型是否成功 demo為影片 test為圖片 擇一

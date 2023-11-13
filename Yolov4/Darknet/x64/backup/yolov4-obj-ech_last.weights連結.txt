@@ -1,0 +1,3 @@
+https://1drv.ms/u/s!AlqsdUm-0z31gqYijMAwV2mGvWunsA?e=G62aVV
+
+模型訓練後產出weights檔 yolov4-obj-ech_last.weights
