@@ -51,6 +51,7 @@ obj-result2 - 查看每張圖片套用訓練後權重是否可正常框選 6 個
 [環境配置](https://medium.com/@u357ps8633/%E7%89%A9%E4%BB%B6%E5%81%B5%E6%B8%AC-yolov4-darknet-cd6ce95321b4)
 [實際訓練](https://medium.com/@u357ps8633/%E7%89%A9%E4%BB%B6%E5%81%B5%E6%B8%AC-yolov4-darknet-%E8%A8%93%E7%B7%B4-76679163964c)  
 訓練後測試  
+訓練後依照權重進行測試，檢查框選6個位置是否正確，後續再將框選的位置裁剪後另存
   
 物件偵測後會將單張圖片  
 流程 4.OCR  
