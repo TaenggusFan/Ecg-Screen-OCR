@@ -50,6 +50,9 @@ obj-result2 - 查看每張圖片套用訓練後權重是否可正常框選 6 個
 物件偵測需進行前期環境建置，完成後進入訓練  
 [環境配置](https://medium.com/@u357ps8633/%E7%89%A9%E4%BB%B6%E5%81%B5%E6%B8%AC-yolov4-darknet-cd6ce95321b4)
 [實際訓練](https://medium.com/@u357ps8633/%E7%89%A9%E4%BB%B6%E5%81%B5%E6%B8%AC-yolov4-darknet-%E8%A8%93%E7%B7%B4-76679163964c)  
+訓練後測試  
+  
+物件偵測後會將單張圖片  
 流程 4.OCR  
 目前 OCR 出來的辨識率沒有很好，一張圖片 6 個位置只有 2 個數字有辨識出來專案目前成果 OCR 辨識率不高  
 ![image](https://github.com/dscareer-bootcamp/data-analytics-starter-TaenggusFan/assets/132985698/c442876d-7b5a-476d-a587-9524df09edee)  
