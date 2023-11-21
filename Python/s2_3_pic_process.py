@@ -16,7 +16,7 @@ def Gray(image_path):
         gray2 = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 11, 7)
         #ImgN = ".\\Pic_gray\\" + "gray" + str(i) + ".jpg"
         #cv2.imwrite(ImgN, invert)
-        cv2.imshow('oxxostudio', gray2)
+        cv2.imshow('PIC', gray2)
 
         cv2.waitKey(0)
         cv2.destroyAllWindows()
