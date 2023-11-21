@@ -19,7 +19,7 @@ def readPath(path):
         img_cut = img[y:y+h, x:x+w]
         Img_Name = "./Pic_Crop/" + str(i) + ".jpg"
         cv2.imwrite(Img_Name, img_cut)
-        #cv2.imshow('oxxostudio', img_cut)
+        #cv2.imshow('PIC', img_cut) #
         #cv2.waitKey(0)
         #cv2.destroyAllWindows()
 
