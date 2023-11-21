@@ -1,13 +1,16 @@
-#讀取模型訓練後權重並將物件偵測後六個位置的框分別截圖到資料夾
+#參考https://ithelp.ithome.com.tw/articles/10297918透過讀取訓練後權重測試框後的位置是否正確
+#參考https://ithelp.ithome.com.tw/articles/10282327?sc=rss.qu
+#整個流程為確認權重正確將物件偵測後的六個位置的數字分別截圖到資料夾作為後續OCR用
+
 
 import cv2
 import numpy as np
 import os
 
-# 讀取模型與訓練權重
+# 讀取模型與訓練權重存放路徑
 def initNet():
-    CONFIG = './Yolov4/Darknet/cfg/yolov4-obj-ech.cfg'
-    WEIGHT = './Yolov4/Darknet/backup/yolov4-obj-ech_last.weights'
+    CONFIG = './Yolov4/Darknet/cfg/yolov4-obj-ech.cfg' #訓練前調整的權重檔
+    WEIGHT = './Yolov4/Darknet/backup/yolov4-obj-ech_last.weights' #物件偵測訓練後結果
     net = cv2.dnn.readNet(CONFIG, WEIGHT)
     model = cv2.dnn_DetectionModel(net)
     model.setInputParams(size=(416, 416), scale=1/255.0)
@@ -80,14 +83,14 @@ if __name__ == '__main__':
                     # 這6張物件偵測的圖片名稱會依序叫做300_1/ 300_2 ... 300/6
                     image_filename = os.path.join(
                         folder_name, f'{file}_{i + 1}.jpg')
-                    cv2.imwrite(image_filename, cut)  # 接著保存
-                    # cv2.imshow(f'Image {i+1}', cut)
+                    cv2.imwrite(image_filename, cut)  #1.這裡依序保存6個位置才建後的圖片
+                    # cv2.imshow(f'Image {i+1}', cut) #如果不想先儲存可以用imshow先檢視把上一行imwrite#不執行
                     print(f'物件儲存成功：{image_filename}')
                     cv2.waitKey(wait_time)
             success += 1
             print('  物件偵測成功：{}'.format(file))
-            frameimg = './Yolov4/obj_result2/' + f'yolov4_{file}'
-            cv2.imwrite(frameimg, frame)  # 接著保存
+            frameimg = './Yolov4/obj_result2/' + f'yolov4_{file}' #2.這裡是保存物件偵測後整張圖片6個框選的位置
+            cv2.imwrite(frameimg, frame)  # 保存
             # cv2.imshow('img', frame)
         print('=' * 60)
         cv2.waitKey()
