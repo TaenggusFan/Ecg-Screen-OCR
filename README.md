@@ -56,7 +56,7 @@ obj-result2 - 查看每張圖片套用訓練後權重是否可正常框選 6 個
 物件偵測後會將單張圖片  
 流程 4.OCR  
 目前 OCR 出來的辨識率沒有很好，一張圖片 6 個位置只有 2 個數字有辨識出來專案目前成果 OCR 辨識率不高  
-![image](https://github.com/dscareer-bootcamp/data-analytics-starter-TaenggusFan/assets/132985698/c442876d-7b5a-476d-a587-9524df09edee)  
+![image](https://github.com/TaenggusFan/Ecg-Screen-OCR/blob/main/OCR/OCR_Result.png?raw=true)  
 流程 5.ETL
 MongoDB
 
