@@ -29,7 +29,7 @@ s1_capture.py - 上述流程 1 攝影機定時截圖保存
 s2_1_convertojpg.py - 上述流程 2 為了物件偵測方便，圖片集格式若不是 jpg 要轉檔  
 s2_2_piccrop.py - 上述流程 2 將圖片裁減，增加後續圖片偵測出來的大小以利 OCR 辨識  
 s3_yolov4.py - 上述流程 3 將訓練出來的權重及結果套用到每張圖片(如下圖)  
-![Yolov4訓練結果](https://github.com/dscareer-bootcamp/data-analytics-starter-TaenggusFan/assets/132985698/b92fe236-89ef-4f5b-9088-659f40a1bb1b)
+![Yolov4訓練結果](https://github.com/TaenggusFan/Ecg-Screen-OCR/blob/main/Yolov4/Yolov4%E8%A8%93%E7%B7%B4%E7%B5%90%E6%9E%9C.png?raw=true)
 接著將 6 個框選出來的數字位置分別截圖(如下圖)  
 ![image](https://github.com/dscareer-bootcamp/data-analytics-starter-TaenggusFan/assets/132985698/357a5491-54cf-4a42-a45b-363f410b3a3e)  
 s4.ocr.py - 流程 4 將每張圖檔的 6 個位置分別另存後，各別進行 OCR  
