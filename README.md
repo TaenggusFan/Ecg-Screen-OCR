@@ -56,7 +56,7 @@ obj-result2 - 查看每張圖片套用訓練後權重是否可正常框選 6 個
 物件偵測後會將單張圖片  
 流程 4.OCR  
 目前運用
-![image](https://github.com/TaenggusFan/Ecg-Screen-OCR/blob/main/OCR/OCR_Result.png?raw=true](https://github.com/TaenggusFan/Ecg-Screen-OCR/blob/main/OCR/OCR_Result1.png?raw=true)  
+![image](https://github.com/TaenggusFan/Ecg-Screen-OCR/blob/main/OCR/OCR_Result1.png?raw=true)  
 流程 5.ETL
 MongoDB
 
