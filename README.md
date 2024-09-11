@@ -58,7 +58,8 @@ OCR結果
 ![image](https://github.com/TaenggusFan/Ecg-Screen-OCR/blob/main/OCR/OCR_Result1.png?raw=true)  
 流程 5.存入資料庫MySQL  
 參考s5.mysql.ipynb[SQLAlchemy套件](https://medium.com/@u357ps8633/%E6%95%B8%E6%93%9A%E5%88%86%E6%9E%90-sqlalchemy%E5%A5%97%E4%BB%B6%E8%88%87%E8%B3%87%E6%96%99%E5%BA%AB%E9%80%A3%E6%8E%A5-8826cdc6014d)  
-存入資料庫![image](https://github.com/TaenggusFan/Ecg-Screen-OCR/blob/main/MySql/Insert_to_mysql.png?raw=true)  
+存入資料庫結果  
+![image](https://github.com/TaenggusFan/Ecg-Screen-OCR/blob/main/MySql/Insert_to_mysql.png?raw=true)  
 
 ## 資料收集
 圖片取得 [ECG Machine Image Dataset for Vitals Extraction](https://www.kaggle.com/datasets/pranjalverma08/icu-image-extraction)  
