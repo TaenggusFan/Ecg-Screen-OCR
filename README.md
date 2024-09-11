@@ -42,7 +42,6 @@ obj-result2 - 查看每張圖片套用訓練後權重是否可正常框選 6 個
 後續存放 OCR 出來的結果，目前只用 df.dataframe show 出來，待改善辨識率後修改
 
 ## 安裝與使用方法
-
 詳細環境配置及操作皆會按照專案結構之流程各別紀錄說明  
 流程 1.圖片取得  
 流程 2.圖片處理  
@@ -51,16 +50,15 @@ obj-result2 - 查看每張圖片套用訓練後權重是否可正常框選 6 個
 [環境配置](https://medium.com/@u357ps8633/%E7%89%A9%E4%BB%B6%E5%81%B5%E6%B8%AC-yolov4-darknet-cd6ce95321b4)
 [實際訓練](https://medium.com/@u357ps8633/%E7%89%A9%E4%BB%B6%E5%81%B5%E6%B8%AC-yolov4-darknet-%E8%A8%93%E7%B7%B4-76679163964c)  
 訓練後測試  
-訓練後依照權重進行測試，檢查框選6個位置是否正確，後續再將框選的位置裁剪後另存
-  
-物件偵測後會將單張圖片  
+訓練後依照權重進行測試，檢查框選6個位置是否正確，後續再將框選的位置裁剪後另存  
 流程 4.OCR  
-目前運用  
+首先將圖片進行處理(轉灰度圖像→高斯模糊減少雜訊→Canny邊緣檢測強調數字的邊緣→膨脹操作加強邊緣→自適應二值化處理→反轉二值化圖像)可參考Python資料夾中s4_additional_img_process.py  
+![image](https://github.com/user-attachments/assets/28a5ebb6-3a15-4a51-bea6-2e6f119af456)  
+OCR結果  
 ![image](https://github.com/TaenggusFan/Ecg-Screen-OCR/blob/main/OCR/OCR_Result1.png?raw=true)  
-流程 5.ETL
-MongoDB
+流程 5.存入資料庫MySQL  
+參考s5.mysql.ipynb[SQLAlchemy套件](https://medium.com/@u357ps8633/%E6%95%B8%E6%93%9A%E5%88%86%E6%9E%90-sqlalchemy%E5%A5%97%E4%BB%B6%E8%88%87%E8%B3%87%E6%96%99%E5%BA%AB%E9%80%A3%E6%8E%A5-8826cdc6014d)  
+存入資料庫![image](https://github.com/TaenggusFan/Ecg-Screen-OCR/blob/main/MySql/Insert_to_mysql.png?raw=true)  
 
 ## 資料收集
-
-流程 1.圖片取得
-Kaggle Dataset 取代定時拍攝截圖
+圖片取得 [ECG Machine Image Dataset for Vitals Extraction](https://www.kaggle.com/datasets/pranjalverma08/icu-image-extraction)  
